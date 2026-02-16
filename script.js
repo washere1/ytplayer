@@ -1,7 +1,7 @@
 let player;
 let isPlaying = false;
 
-const PLAYLIST_ID = "YOUR_PLAYLIST_ID_HERE";
+const PLAYLIST_ID = "PLxA687tYuMWiPVIIC_bNd9J8Aq2Mtch8I";
 
 const playBtn = document.getElementById("play");
 const nextBtn = document.getElementById("next");
