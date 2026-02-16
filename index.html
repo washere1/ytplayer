@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Zen Player</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <main class="app">
+    <section class="player-card">
+      <div class="album-art">
+        <img id="thumbnail" alt="Album Art"/>
+      </div>
+
+      <div class="meta">
+        <h1 id="track-title">Loading...</h1>
+        <p id="track-uploader">—</p>
+      </div>
+
+      <div class="progress-container">
+        <span id="current-time">0:00</span>
+        <input type="range" id="progress" min="0" max="100" value="0"/>
+        <span id="duration">0:00</span>
+      </div>
+
+      <div class="controls">
+        <button id="prev">⏮</button>
+        <button id="play">▶</button>
+        <button id="next">⏭</button>
+      </div>
+
+      <div class="volume">
+        <span>🔊</span>
+        <input type="range" id="volume" min="0" max="100" value="70"/>
+      </div>
+    </section>
+  </main>
+
+  <div id="player"></div>
+
+  <script src="https://www.youtube.com/iframe_api"></script>
+  <script src="script.js"></script>
+</body>
+</html>
